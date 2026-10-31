@@ -1,0 +1,18 @@
+# Cached/regenerable data -- all of this is rebuilt by running the fetch/build scripts,
+# no need to commit it (pbp_raw.parquet alone is tens of MB and grows every season)
+data/*.csv
+data/*.parquet
+
+# Keep the data/ directory itself tracked even though its contents are ignored
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
